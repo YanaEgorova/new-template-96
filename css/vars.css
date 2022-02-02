@@ -1,0 +1,23 @@
+:root {
+  --main-bg-color: #fff;
+  --sub-bg-color: #000;
+  --main-text-color: #000;
+  --sub-text-color: #fff;
+  --inactive: #818181;
+  --success: #bee3be;
+  --link-color: blue;
+  --accent-color: #ff0000;
+
+
+  --first-brand-color: #e6e4db;
+  --second-brand-color: #d4bd9c;
+  --third-brand-color: #7c837a;
+  --fourth-brand-color: #534f4e;
+  --fifth-brand-color: #eee;
+
+  --main-font:  'Montserrat';
+  --title-font:  'Montserrat Bold';
+  --main-title-font:'Oooh Baby';
+
+  font-size: 62.5%;
+}

@@ -1,0 +1,128 @@
+body.open-menu {
+    overflow: hidden;
+}
+.header__wrapper {
+    position: relative;
+}
+.header {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__btn {
+    font-family: var(--title-font);
+    font-size: 2rem;
+    text-transform: uppercase;
+    z-index: 99999;
+    position: relative;
+}
+.cart__span-box {
+    position: relative;
+    display: none;
+}
+.cart__span-box svg {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    fill: var(--main-text-color);
+}
+.cart__span {
+    font-size: 2rem;
+    top: -1.5rem;
+    right: -1.5rem;
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border-radius: 50%;
+    color: var(--sub-text-color);
+    background-color: var(--fourth-brand-color);
+}
+.nav__title {
+    font-family: var(--title-font);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    background-color: var(--first-brand-color);
+    color: var(--main-text-color);
+    padding: 1rem;
+}
+.nav__link {
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--main-text-color);
+}
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-bg-color);
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    transition: all 0.3s ease-in-out;
+    padding: 15rem 5rem 2rem;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.nav.open-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+}
+.header__logo {
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    color: var(--main-text-color);
+}
+.header-icon {
+    display: block;
+    width: 5rem;
+}
+.nav__sub-item {
+    padding-left: 2rem; 
+}
+.nav__sub-item:not(:last-child) {
+    margin-bottom: 1.5rem;  
+}
+.nav__item:not(:last-child) {
+    margin-bottom: 3rem;  
+}
+
+@media screen and (min-width: 1440px) {
+    .nav__link {
+        position: relative;
+    }
+    .nav__link::after {
+        position: absolute;
+        display: block;
+        content: '';
+        height: .1rem;
+        width: 0;
+        background-color: var(--main-text-color);
+        
+        transition: all 0.3s ease-in-out;
+        bottom: -.5rem;
+        left: 0;
+    }
+    .nav__link:hover::after {
+        width: 100%;
+    }
+    .cart__span-box {
+        display: block;
+        margin-right: 3rem;
+    }
+    .header__flex {
+        display: flex;
+        align-items: center;
+    }
+}
