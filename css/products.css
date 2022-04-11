@@ -228,7 +228,7 @@
     }
     .products__list-box {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .products__list-block {
         display: flex;
