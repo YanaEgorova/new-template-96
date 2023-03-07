@@ -82,7 +82,7 @@ function removeItem(e) {
       showEmptyMessage();
   }
 
- 
+
 }
 
 function showEmptyMessage() {
