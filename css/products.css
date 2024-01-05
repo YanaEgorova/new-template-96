@@ -182,7 +182,7 @@
     .product__price {
         position: absolute;
         bottom: 0;
-        right: -2rem;
+        right: -8rem;
         font-size: 3rem;
         background-color: var(--fourth-brand-color);
         color: var(--sub-text-color);

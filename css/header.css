@@ -10,6 +10,13 @@ body.open-menu {
     align-items: center;
     justify-content: space-between;
 }
+.header .logo {
+    text-align: left;
+}
+.header__flex {
+    display: flex;
+    align-items: center;
+}
 .header__btn {
     font-family: var(--title-font);
     font-size: 2rem;
@@ -19,16 +26,17 @@ body.open-menu {
 }
 .cart__span-box {
     position: relative;
-    display: none;
+    margin-right: 4rem;
+    /* display: flex; */
 }
 .cart__span-box svg {
     display: block;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     fill: var(--main-text-color);
 }
 .cart__span {
-    font-size: 2rem;
+    font-size: 1.4rem;
     top: -1.5rem;
     right: -1.5rem;
     position: absolute;
